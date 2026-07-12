@@ -134,8 +134,13 @@ h3{font-size:1.25rem;}
   background:linear-gradient(180deg,var(--sand) 0%, var(--ivory) 100%);
 }
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:32px;}
+  .hero{padding:60px 0 44px;}
+}
 .hero-copy p.lead{font-size:1.12rem;color:#4A4038;max-width:520px;margin-top:18px;}
 .hero-visual{position:relative;height:420px;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);}
+@media(max-width:860px){.hero-visual{height:220px;}}
 .fabric-swatch{
   position:absolute;inset:0;
   background:
