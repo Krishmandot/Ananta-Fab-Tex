@@ -3,15 +3,15 @@
    Palette: Balotra desert sand + loom indigo + dyed maroon
    ========================================================= */
 :root{
-  --sand:        #EFE4CE;   /* raw cotton / desert sand base */
-  --ivory:       #FAF6EC;   /* page background */
-  --charcoal:    #2B2420;   /* body text, warm near-black */
+  --sand:        #E7F5EE;   /* soft mint tint for alt sections */
+  --ivory:       #FAFAF8;   /* page background */
+  --charcoal:    #202325;   /* body text, near-black from logo */
   --terracotta:  #3EAE7D;   /* primary accent — logo green */
---maroon:      #1E2A3D;   /* secondary accent — logo navy blue */
---indigo:      #2C8F65;   /* mid green — depth / gradients */
---indigo-dark: #16202E;   /* dark navy — header/footer/nav */
-  --thread-gold: #C79A3D;   /* fine accent for rules/numbers */
-  --line:        #E2D3B4;
+  --maroon:      #191C1E;   /* secondary accent — logo black */
+  --indigo:      #2C8F65;   /* mid green — depth / gradients */
+  --indigo-dark: #14171A;   /* near-black — header/footer/nav */
+  --thread-gold: #C79A3D;   /* fine accent, ratings/stars only */
+  --line:        #DCEAE3;
 
   --font-head: 'Sora', 'Segoe UI', sans-serif;
   --font-body: 'Inter', 'Segoe UI', sans-serif;
@@ -81,7 +81,8 @@ h3{font-size:1.25rem;}
   border-bottom:1px solid var(--line);
 }
 .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--container);margin:0 auto;}
-.brand{display:flex;flex-direction:column;line-height:1.1;}
+.brand{display:flex;align-items:center;gap:12px;line-height:1.1;}
+.brand-logo{height:52px;width:auto;display:block;border-radius:6px;}
 .brand-name{font-family:var(--font-head);font-weight:800;font-size:1.28rem;color:var(--indigo-dark);}
 .brand-tag{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--terracotta);}
 .nav-links{display:flex;gap:34px;align-items:center;}
@@ -187,10 +188,10 @@ section{padding:88px 0;}
 .product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);}
 .product-thumb{height:190px;position:relative;overflow:hidden;}
 .product-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.25),transparent 60%);}
-.thumb-1{background:repeating-linear-gradient(45deg,#B85C2E 0 12px,#9A4A24 12px 24px);}
-.thumb-2{background:repeating-linear-gradient(45deg,#1E2A3D 0 12px,#141D2A 12px 24px);}
-.thumb-3{background:repeating-linear-gradient(45deg,#223255 0 12px,#17223A 12px 24px);}
-.thumb-4{background:repeating-linear-gradient(45deg,#C79A3D 0 12px,#A87D2C 12px 24px);}
+.thumb-1{background:repeating-linear-gradient(45deg,#3EAE7D 0 12px,#2F8F67 12px 24px);}
+.thumb-2{background:repeating-linear-gradient(45deg,#191C1E 0 12px,#0E1011 12px 24px);}
+.thumb-3{background:repeating-linear-gradient(45deg,#2C8F65 0 12px,#1F6B4B 12px 24px);}
+.thumb-4{background:repeating-linear-gradient(45deg,#6FC9A0 0 12px,#4FAE7D 12px 24px);}
 .product-thumb .swatch-label{
   position:absolute;left:14px;bottom:12px;color:#fff;font-family:var(--font-mono);
   font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;z-index:1;
@@ -306,7 +307,7 @@ footer{background:var(--indigo-dark);color:#C6CBDA;padding:56px 0 26px;}
 }
 .fab svg{width:28px;height:28px;}
 .fab-whatsapp{background:#25D366;}
-.fab-call{background:var(--terracotta);}
+.fab-call{background:var(--maroon);}
 .fab:hover{transform:scale(1.08);}
 .fab::before{
   content:attr(data-label);position:absolute;right:70px;top:50%;transform:translateY(-50%);
