@@ -6,10 +6,10 @@
   --sand:        #EFE4CE;   /* raw cotton / desert sand base */
   --ivory:       #FAF6EC;   /* page background */
   --charcoal:    #2B2420;   /* body text, warm near-black */
-  --terracotta:  #B85C2E;   /* primary accent — dyed thread */
-  --maroon:      #7A1F2B;   /* secondary accent — bandhani red */
-  --indigo:      #223255;   /* deep indigo — loom / trust */
-  --indigo-dark: #17223A;
+  --terracotta:  #3EAE7D;   /* primary accent — logo green */
+--maroon:      #1E2A3D;   /* secondary accent — logo navy blue */
+--indigo:      #2C8F65;   /* mid green — depth / gradients */
+--indigo-dark: #16202E;   /* dark navy — header/footer/nav */
   --thread-gold: #C79A3D;   /* fine accent for rules/numbers */
   --line:        #E2D3B4;
 
@@ -188,7 +188,7 @@ section{padding:88px 0;}
 .product-thumb{height:190px;position:relative;overflow:hidden;}
 .product-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.25),transparent 60%);}
 .thumb-1{background:repeating-linear-gradient(45deg,#B85C2E 0 12px,#9A4A24 12px 24px);}
-.thumb-2{background:repeating-linear-gradient(45deg,#7A1F2B 0 12px,#5E1620 12px 24px);}
+.thumb-2{background:repeating-linear-gradient(45deg,#1E2A3D 0 12px,#141D2A 12px 24px);}
 .thumb-3{background:repeating-linear-gradient(45deg,#223255 0 12px,#17223A 12px 24px);}
 .thumb-4{background:repeating-linear-gradient(45deg,#C79A3D 0 12px,#A87D2C 12px 24px);}
 .product-thumb .swatch-label{
